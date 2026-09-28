@@ -11,11 +11,11 @@
 <div class="wrap">
   <header>
     <h1>Privacy Policy</h1>
-    <p class="tag">Ossiato · last updated 28 September 2026</p>
+    <p class="tag">Ossiato · last updated 28 September 2026 (AI caller)</p>
   </header>
 
   <h2>The short version</h2>
-  <p>Ossiato collects no personal data. There is no account, no analytics and no tracking. Your voice, your recordings and your progress stay on your iPhone.</p>
+  <p>Ossiato has no account, no analytics and no tracking. Your voice, your recordings and your progress stay on your iPhone. The only thing that leaves the device is the text of a practice call when you use the AI caller — see Network access below.</p>
 
   <h2>The microphone</h2>
   <ul>
@@ -36,7 +36,12 @@
   <p>All of this is stored locally on your iPhone (and shared with the Ossiato widget and Apple Watch app through an App Group on your own devices). It is included in your device backup like other app data. We never receive it.</p>
 
   <h2>Network access</h2>
-  <p>The only network requests Ossiato makes are to Apple's App Store, for purchases, handled by StoreKit. If an AI caller for the call trainer is enabled in a future version, only the text of your replies in the current practice call is sent to generate the caller's next line; it is not linked to your identity, not used for tracking and not stored. This policy will be updated before that happens.</p>
+  <p>Ossiato makes network requests in two cases only:</p>
+  <ul>
+    <li><b>Purchases</b> — to Apple's App Store, handled by StoreKit.</li>
+    <li><b>AI caller in the phone-call trainer</b> — while you practise a call, the <b>text</b> of the current conversation (what the simulated caller said and the transcript of your replies), the scenario and language, and a random installation ID are sent to our server to generate the caller's next line. Audio is never sent. The server passes the text to Anthropic's Claude API and returns the reply. The text is not stored and not written to logs; it is not linked to your identity and not used for tracking or advertising. Anthropic does not use API data to train its models. The random installation ID is stored only as a one-way hash with request counters, to prevent abuse; the counters expire automatically.</li>
+  </ul>
+  <p>If the server can't be reached, the trainer switches to offline scripts and nothing is sent.</p>
 
   <h2>Third parties</h2>
   <p>Ossiato contains no advertising and no analytics SDKs. Purchases are processed by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
@@ -45,7 +50,7 @@
   <p>Ossiato collects no personal data from anyone, including children.</p>
 
   <h2>Your rights</h2>
-  <p>Because we collect no personal data, there is nothing for us to export, correct or delete. You can export or delete your data in the app's Settings; deleting the app removes everything Ossiato has stored.</p>
+  <p>We keep no personal data: practice-call text is not stored, and the hashed installation ID cannot be linked to you. You can export or delete your data in the app's Settings; deleting the app removes everything Ossiato has stored.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the updated version will be published on this page with a new date.</p>
